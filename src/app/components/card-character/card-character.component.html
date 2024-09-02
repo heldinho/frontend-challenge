@@ -1,0 +1,16 @@
+@if (item) {
+  <div class="card" style="width: 18rem">
+    <div class="heart">
+      @if (isFavorite) {
+        <app-heart />
+      } @else {
+        <app-heart-o />
+      }
+    </div>
+    <img [src]="item?.image" class="card-img-top" [alt]="item?.name" />
+    <div class="card-body">
+      <h5 class="card-title">{{ item?.name }}</h5>
+      <p class="card-text">{{ item?.species }}</p>
+    </div>
+  </div>
+}

@@ -1,0 +1,26 @@
+<main class="container">
+  <div class="container p-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <img src="assets/logo.png" alt="logo" />
+      <input
+        class="form-control form-control-lg input-search"
+        type="text"
+        placeholder="Pesquisar"
+        (change)="change($event)"
+        (submit)="search()"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    @if (data) {
+      <ul>
+        @for (item of data; track item.id; let i = $index) {
+          <app-card-character [item]="item" />
+        }
+      </ul>
+    } @else {
+      <p>Nenhum personagem encontrado...</p>
+    }
+  </div>
+</main>

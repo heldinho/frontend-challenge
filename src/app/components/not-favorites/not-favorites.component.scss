@@ -1,0 +1,25 @@
+.container {
+  background-color: #0a0a0a;
+  border-color: #3d3d3d;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+  gap: 30px;
+  border-radius: 8px;
+  .title {
+    color: #fff;
+    font-size: 26px;
+  }
+  .subtitle {
+    color: #777;
+    font-size: 18px;
+  }
+  .btn {
+    background-color: #fff;
+    border-color: #fff;
+    color: #0a0a0a;
+  }
+}

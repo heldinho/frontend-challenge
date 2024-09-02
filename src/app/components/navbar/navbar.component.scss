@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #0a0a0a;
+  .btn {
+    gap: 10px;
+  }
+}
+
+.btn-primary {
+  background-color: #0a0a0a;
+  border-color: #3d3d3d;
+  color: #a4a4a4;
+  &.active {
+    background-color: #fff;
+    border-color: #fff;
+    color: #0a0a0a;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+  &:hover {
+    background-color: #0b0b0b;
+  }
+}

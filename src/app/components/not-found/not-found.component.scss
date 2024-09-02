@@ -1,0 +1,19 @@
+.boxinfo {
+  background-color: #444;
+  padding: 20px;
+  width: 80%;
+  height: 50%;
+
+  p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &.infotitle {
+      font-size: 24px;
+    }
+
+    &.infodescription {
+      color: #aaa;
+    }
+  }
+}
