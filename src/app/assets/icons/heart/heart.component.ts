@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class HeartComponent {
   @Input() fillColor = '#0a0a0a';
+  @Input() width = 32;
+  @Input() height = 32;
 }

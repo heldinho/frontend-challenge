@@ -2,9 +2,13 @@
   <div class="card" style="width: 18rem">
     <div class="heart">
       @if (isFavorite) {
-        <app-heart />
+        <span (click)="fnFavorite(item)" class="click-favorite">
+          <app-heart />
+        </span>
       } @else {
-        <app-heart-o />
+        <span (click)="fnFavorite(item)" class="click-favorite">
+          <app-heart-o />
+        </span>
       }
     </div>
     <img [src]="item?.image" class="card-img-top" [alt]="item?.name" />

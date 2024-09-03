@@ -5,6 +5,9 @@
     position: absolute;
     top: 10px;
     right: 12px;
+    .click-favorite {
+      cursor: pointer;
+    }
   }
   .card-title {
     color: #fff;

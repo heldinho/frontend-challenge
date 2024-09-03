@@ -13,4 +13,11 @@ import { HeartOComponent } from '../../assets/icons/heart-o/heart-o.component';
 export class CardCharacterComponent {
   @Input() item!: Character;
   isFavorite: boolean = false;
+
+  constructor() {}
+
+  fnFavorite(item: Character): void {
+    this.isFavorite = !this.isFavorite;
+    console.log(item);
+  }
 }

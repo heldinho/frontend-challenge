@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class HeartOComponent {
   @Input() fillColor = '#fafafa';
+  @Input() width = 32;
+  @Input() height = 32;
 }
