@@ -1,1 +1,13 @@
-<app-not-favorites />
+<main class="container">
+  <div class="row">
+    @if (data) {
+      <ul>
+        @for (item of data; track item.id; let i = $index) {
+          <app-card-character [item]="item" />
+        }
+      </ul>
+    } @else {
+      <app-not-favorites />
+    }
+  </div>
+</main>
